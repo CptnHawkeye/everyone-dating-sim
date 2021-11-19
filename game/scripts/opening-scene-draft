@@ -1,0 +1,64 @@
+# The script of the game goes in this file.
+
+# Declare characters used by this game. The color argument colorizes the
+# name of the character.
+define mc = Character("[name]")
+# main love interests
+define ji = Character("Jim")
+define c =  Character("Chris")
+define f = Character("Frank")
+define jo = Character("Josh")
+define hdm = Character("Hanson")
+define v = Character("Victor")
+define jay = Character("Jaynard")
+define km = Character("Kevin")
+define jam = Character("James")
+define b = Character("Bailey")
+# side characters
+define s = Character("Sarah")
+define d = Character("Dorothy")
+define z = Character("Zach")
+define eth = Character("Ethan")
+define sar = Character("Sarang")
+define br = Character("Brett")
+define g = Character("Gao")
+define jme = Character("Jamie")
+# fill characters 
+define kath = Character("Kathleen")
+define m = Character("Manon")
+define z = Character("Eric Zhao")
+define a = Character("Arraf")
+define shi = Character("Shiren")
+define n = Character("Nic")
+
+
+
+
+# The game starts here.
+
+label start:
+
+    # Show a background. This uses a placeholder by default, but you can
+    # add a file (named either "bg room.png" or "bg room.jpg") to the
+    # images directory to show it.
+
+    scene bg_black
+
+    "Welcome to the @everyone dating simulator."
+    "How about we start with a name."
+    $ name = renpy.input("What is your name?")
+    $ name = name.strip()
+    play music "audio/bgm1.mp3"
+    "[name]. That's a pretty nice name you got there."
+    "Well I hope you have fun. Enjoy."
+    "From here on we will introduce the characters and clubs once we have those details figured out."
+
+    
+
+    # These display lines of dialogue.
+
+    
+
+    # This ends the game.
+
+    return
